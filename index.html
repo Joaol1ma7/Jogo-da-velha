@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div id="topo">
+        <div class="esq"><span class="mdi mdi-instagram" onclick="abreInsta()"></span></div>
+        <div class="meio">
+            <h1>João Lima</h1>
+        </div>
+        <div class="dir"><span class="mdi mdi-restart" onclick="restart()"></span></div>
+    </div>
+    <div id="corpoJogo">
+        <p id="p">Jogo da velha</p>
+        <table>
+            <tr>
+                <td><button class="botaoNormal" id="1" onclick="marca(1)"></button></td>
+                <td><button class="botaoNormal" id="2" onclick="marca(2)"></button></td>
+                <td><button class="botaoNormal" id="3" onclick="marca(3)"></button></td>
+            </tr>
+            <tr>
+                <td><button class="botaoNormal" id="4" onclick="marca(4)"></button></td>
+                <td><button class="botaoNormal" id="5" onclick="marca(5)"></button></td>
+                <td><button class="botaoNormal" id="6" onclick="marca(6)"></button></td>
+            </tr>
+            <tr>
+                <td><button class="botaoNormal" class="botl" id="7" onclick="marca(7)"></button></td>
+                <td><button class="botaoNormal" id="8" onclick="marca(8)"></button></td>
+                <td><button class="botaoNormal" class="botr" id="9" onclick="marca(9)"></button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
